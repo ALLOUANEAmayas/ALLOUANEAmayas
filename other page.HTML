@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // create header elements 
+        const h1 = document .createElement ("h1");
+        h1.textContent = " GTA 5 -Video Game Description";
+        document.body .appendChild(h1);
+
+        const h2Introduction = document .createElement("h2");
+        h2Introduction .textContent = "Introduction";
+        const h2Gameplay = "Gameplay";
+
+        //Create paragraphe elements
+        const pIntroduction = document.createElement("p");
+        pIntroduction.textContent = "GTA 5 IS an open-world";
+        const pGameplay = document.createElement("p");
+        pGameplay.textContent = "GTA 5 takes place in  the "
+
+
+        // Create button to toggle visibility of gameplay description
+        const toggleButtom = document.createElement ("buttom")
+        toggleButtom.textContent = "Toggle Gameplay Description ";
+        toggleButtom.addEventListener("click",function() {
+            if (pGameplay.style.display ==="none"){
+                pGameplay.style.display = "block";
+            } else {
+                pGameplay.style.display = "none";
+            }
+        })
+        // Add elements to the body 
+        document.body.appendChild(h2Introduction);
+        document.body.appendChild(pIntroduction);
+        document.body.appendChild(h2Gameplay);
+        document.body.appendChild(toggleButtom);
+        document.body.appendChild(pGameplay);
+        
+    </script>
+</body>
+</html>
